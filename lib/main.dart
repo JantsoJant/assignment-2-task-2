@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:task2/age.dart';
 import 'package:task2/currency.dart';
+import 'package:task2/currency1.dart';
 import 'package:task2/friendship.dart';
+import 'package:task2/length.dart';
 import 'package:task2/splash_screen.dart';
+import 'package:task2/temperature.dart';
+import 'package:task2/time.dart';
+import 'package:task2/timeBelgium.dart';
+import 'package:task2/weight.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,18 +44,17 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   final List<Map<String, dynamic>> categories = [
     {"name": "Friendship", "img": "images/friendship.png", "route": Friendship()},
-    {"name": "Currency", "img": "images/currency.png", "route": CurrencyConverter()},
-    {"name": "Temperature", "img": "images/temperature.png", "route": Friendship()},
+    {"name": "Currency USD", "img": "images/currency.png", "route": CurrencyConverter()},
+    {"name": "Temperature", "img": "images/temperature.png", "route": Temperature()},
     {"name": "BMI", "img": "images/bmi.png", "route": Friendship()},
-    {"name": "Length", "img": "images/length.png", "route": Friendship()},
+    {"name": "Length", "img": "images/length.png", "route": Length()},
     {"name": "Area", "img": "images/area.png", "route": Friendship()},
     {"name": "Volume", "img": "images/volume.png", "route": Friendship()},
-    {"name": "Weight", "img": "images/weight.png", "route": Friendship()},
-    {"name": "Time", "img": "images/time.png", "route": Friendship()},
-    {"name": "Age", "img": "images/age.png", "route": Friendship()},
-    {"name": "Time", "img": "images/time.png", "route": Friendship()},
-    {"name": "Currency", "img": "images/currency.png", "route": Friendship()},
-    {"name": "Temperature", "img": "images/temperature.png", "route": Friendship()},
+    {"name": "Weight", "img": "images/weight.png", "route": WeightConverterScreen()},
+    {"name": "Time Belgium", "img": "images/time.png", "route": TimeBelgiumConverter()},
+    {"name": "Age", "img": "images/age.png", "route": AgeCalculator()},
+    {"name": "Currency Pound", "img": "images/currency.png", "route": CurrencyPoundConverter()},
+    {"name": "Time", "img": "images/time.png", "route": TimeConverter()},
   ];
 
   @override
