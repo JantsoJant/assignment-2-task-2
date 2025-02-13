@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
-class WeightConverterScreen extends StatefulWidget {
+class WeightConverter extends StatefulWidget {
+  const WeightConverter({super.key});
+
   @override
-  _WeightConverterScreenState createState() => _WeightConverterScreenState();
+  State<WeightConverter> createState() => _WeightConverterState();
 }
 
-class _WeightConverterScreenState extends State<WeightConverterScreen> {
+class _WeightConverterState extends State<WeightConverter> {
   final TextEditingController _controller = TextEditingController();
   double _convertedValue = 0.0;
   String _fromUnit = "Kilograms";
