@@ -132,7 +132,7 @@ class _AgeCalculatorState extends State<AgeCalculator>{
                       ),
                       Text(
                         ageResult,
-                        style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold, color: Colors.white),
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.white),
                       )
                     ],
                   )
